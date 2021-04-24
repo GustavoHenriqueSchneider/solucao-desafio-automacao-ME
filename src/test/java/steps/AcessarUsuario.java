@@ -15,15 +15,15 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertEquals;
 
 public class AcessarUsuario {
-    private WebDriver navegador;
-    private WebElement formularioLogin;
+    protected static WebDriver navegador;
+    protected static WebElement formularios;
     private WebElement nomeUsuarioConta;
 
     @Dado("que acesso o site Automation Practice")
     public void queAcessoOSiteAutomationPractice() {
         //Configura o driver para utilizar o navegador para testes automatizados
         System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-        //Abrir o navegador e configura o timeout
+        //Abre o navegador e configura o timeout
         navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         //Expande a janela do navegador
@@ -40,16 +40,16 @@ public class AcessarUsuario {
 
     @Quando("^informo o email \"(.*)\" no formulario entrar$")
     public void informoOEmailNoFormularioEntrar(String email) {
-        //Atribui o elemtento formulario de login através do id "center_column" a formularioLogin
-        formularioLogin = navegador.findElement(By.id("center_column"));
-        //Digitar o email no campo de id "email" que esta dentro do formulario de id "center_column"
-        formularioLogin.findElement(By.id("email")).sendKeys(email);
+        //Atribui o elemtento formulario de login através do id "center_column" a formularios
+        formularios = navegador.findElement(By.id("center_column"));
+        //Digita o email no campo de id "email" que esta dentro do formulario de id "center_column"
+        formularios.findElement(By.id("email")).sendKeys(email);
     }
 
     @E("informo a senha {string} no formulario entrar")
     public void informoASenhaNoFormularioEntrar(String senha) {
-        //Digitar a senha no campo de id "passwd" que esta dentro do formulario de id "center_column"
-        formularioLogin.findElement(By.id("passwd")).sendKeys(senha);
+        //Digita a senha no campo de id "passwd" que esta dentro do formulario de id "center_column"
+        formularios.findElement(By.id("passwd")).sendKeys(senha);
     }
 
     @E("clico em entrar")
@@ -74,8 +74,8 @@ public class AcessarUsuario {
 
     @Então("visualizo o erro de autenticação")
     public void visualizoOErroDeAutenticação() {
-        //Identificar o erro no elemento através do seu XPath "//div[@class="alert alert-danger"]" e
-        //o atribui a uma string erro
+        //Identifica o erro no elemento através do seu XPath "//div[@class="alert alert-danger"]" e
+        //o atribui a String erro
         String erro = navegador.findElement(By.xpath("//div[@class=\"alert alert-danger\"]")).getText();
         //Valida se a mensagem de erro é igual a encontrada na tentativa de entrar com uma conta invalida/incorreta
         Assert.assertEquals("There is 1 error\nAuthentication failed.", erro);

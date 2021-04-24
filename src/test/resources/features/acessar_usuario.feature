@@ -1,7 +1,6 @@
 #Define a linguagem utilizada pelo Cucumber como portugues
 # language: pt
-  Funcionalidade: Inserir Conta
-    @ignore
+  Funcionalidade: Acessar Conta
     Cenario: Acessar o site com uma conta com sucesso
       Dado que acesso o site Automation Practice
       E clico em "Sign in"

@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         //Declaração do local da pasta que contem as classes com métodos para execução dos cenários
         glue = "steps",
         //Declaração do local que a feature (a funcionalidade e os cenários) se encontra
-        features = "src/test/resources/features/testes_usuario.feature",
+        features = "src/test/resources/features/cadastrar_usuario.feature",
         //Configuração para o terminal apresentar os testes (se passaram ou não) e inclusão de
         //geração de relatórios automáticos em HTML e JSON na pasta reports
         plugin = {"pretty","html:target/reports/relatorioHTML.html","json:target/reports/relatorioJSON.json"},
