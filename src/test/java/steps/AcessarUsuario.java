@@ -4,6 +4,7 @@ import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -68,6 +69,15 @@ public class AcessarUsuario {
     @E("fecho a aplicação")
     public void fechoAAplicacao() {
         //Encerra o navegador (todas abas)
-        //navegador.quit();
+        navegador.quit();
+    }
+
+    @Então("visualizo o erro de autenticação")
+    public void visualizoOErroDeAutenticação() {
+        //Identificar o erro no elemento através do seu XPath "//div[@class="alert alert-danger"]" e
+        //o atribui a uma string erro
+        String erro = navegador.findElement(By.xpath("//div[@class=\"alert alert-danger\"]")).getText();
+        //Valida se a mensagem de erro é igual a encontrada na tentativa de entrar com uma conta invalida/incorreta
+        Assert.assertEquals("There is 1 error\nAuthentication failed.", erro);
     }
 }
