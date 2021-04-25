@@ -27,12 +27,20 @@ public class CadastrarUsuarioSteps {
         navegador.findElement(By.xpath("//button[@id=\"SubmitCreate\"]")).click();
     }
 
-    @Então("visualizo o erro de criação de conta")
-    public void visualizoOErroDeCriaçãoDeConta() {
+    @Então("^visualizo o erro de criação de conta ([a-z\\s]+)$")
+    public void visualizoOErroDeCriaçãoDeConta(String tipoErro) {
         //Identifica o erro no elemento através do xpath "//div[@id="create_account_error"]/ol/li" e o atribui a String erro
         String erro = navegador.findElement(By.xpath("//div[@id=\"create_account_error\"]/ol/li")).getText();
-        //Valida se a mensagem de erro é igual a encontrada na tentativa de criar uma conta já existente
-        Assert.assertEquals("An account using this email address has already been registered. Please enter a valid password or request a new one.",erro);
+        if("ja existente".equals(tipoErro))
+        {
+            //Valida se a mensagem de erro é igual a encontrada na tentativa de criar uma conta já existente
+            Assert.assertEquals("An account using this email address has already been registered. Please enter a valid password or request a new one.",erro);
+
+        }
+        else if("sem email".equals(tipoErro)){
+            //Valida se a mensagem de erro é igual a encontrada na tentativa de criar uma conta sem email
+            Assert.assertEquals("Invalid email address.",erro);
+        }
     }
 
     @Quando("^escolho o gênero \"([MF])\"$")

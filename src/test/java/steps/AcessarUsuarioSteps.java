@@ -52,7 +52,7 @@ public class AcessarUsuarioSteps {
         formularios.findElement(By.id("email")).sendKeys(email);
     }
 
-    @E("informo a senha {string} no formulario entrar")
+    @Quando("^informo a senha \"(.*{5,})\" no formulario entrar$")
     public void informoASenhaNoFormularioEntrar(String senha) {
         //Digita a senha no campo de id "passwd" que esta dentro do formulario de id "center_column"
         formularios.findElement(By.id("passwd")).sendKeys(senha);
@@ -79,6 +79,31 @@ public class AcessarUsuarioSteps {
         String erro = navegador.findElement(By.xpath("//div[@class=\"alert alert-danger\"]")).getText();
         //Valida se a mensagem de erro é igual a encontrada na tentativa de entrar com uma conta invalida/incorreta
         Assert.assertEquals("There is 1 error\nAuthentication failed.", erro);
+    }
+
+    @Então("visualizo o erro de obrigatoriedade de {word}")
+    public void visualizoOErroDeObrigatoriedadeDeCampo(String tipoErro) {
+        //Identifica o erro no elemento através do seu XPath "//div[@class="alert alert-danger"]" e
+        //o atribui a String erro
+        String erro = navegador.findElement(By.xpath("//div[@class=\"alert alert-danger\"]")).getText();
+        if("email".equals(tipoErro))
+        {
+            //Valida se a mensagem de erro é igual a encontrada na tentativa de entrar sem email
+            Assert.assertEquals("There is 1 error\nAn email address required.", erro);
+        }
+        else if("senha".equals(tipoErro))
+        {
+            //Valida se a mensagem de erro é igual a encontrada na tentativa de entrar sem senha
+            Assert.assertEquals("There is 1 error\nPassword is required.", erro);
+        }
+    }
+
+    @Quando("informo a senha de teste")
+    public void informoASenhaDeTeste() {
+        //Atribui o elemtento formulario de login através do id "center_column" a formularios
+        formularios = navegador.findElement(By.id("center_column"));
+        //Digita a senha "testeME123" no campo de id "passwd" que esta dentro do formulario de id "center_column"
+        formularios.findElement(By.id("passwd")).sendKeys("testeME123");
     }
 
     @After
