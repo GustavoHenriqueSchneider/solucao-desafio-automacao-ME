@@ -1,5 +1,7 @@
 package steps;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Então;
@@ -14,13 +16,13 @@ import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
 
-public class AcessarUsuario {
+public class AcessarUsuarioSteps {
     protected static WebDriver navegador;
     protected static WebElement formularios;
     private WebElement nomeUsuarioConta;
 
-    @Dado("que acesso o site Automation Practice")
-    public void queAcessoOSiteAutomationPractice() {
+    @Before
+    public void setup() {
         //Configura o driver para utilizar o navegador para testes automatizados
         System.setProperty("webdriver.chrome.driver","chromedriver.exe");
         //Abre o navegador e configura o timeout
@@ -28,6 +30,10 @@ public class AcessarUsuario {
         navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         //Expande a janela do navegador
         navegador.manage().window().maximize();
+    }
+
+    @Dado("que acesso o site Automation Practice")
+    public void queAcessoOSiteAutomationPractice() {
         //Acessa a pagina
         navegador.get("http://automationpractice.com/index.php");
     }
@@ -66,12 +72,6 @@ public class AcessarUsuario {
         assertEquals(nome, nomeUsuarioSite);
     }
 
-    @E("fecho a aplicação")
-    public void fechoAAplicacao() {
-        //Encerra o navegador (todas abas)
-        navegador.quit();
-    }
-
     @Então("visualizo o erro de autenticação")
     public void visualizoOErroDeAutenticação() {
         //Identifica o erro no elemento através do seu XPath "//div[@class="alert alert-danger"]" e
@@ -79,5 +79,11 @@ public class AcessarUsuario {
         String erro = navegador.findElement(By.xpath("//div[@class=\"alert alert-danger\"]")).getText();
         //Valida se a mensagem de erro é igual a encontrada na tentativa de entrar com uma conta invalida/incorreta
         Assert.assertEquals("There is 1 error\nAuthentication failed.", erro);
+    }
+
+    @After
+    public void tearDown() {
+        //Encerra o navegador (todas abas)
+        navegador.quit();
     }
 }
