@@ -14,8 +14,8 @@
 
       Exemplos:
         | email                          | nome       | senha  |
-        | teste-me-automacao2@hotmail.com | TesteME QA | 123456 |
-        | automacao-me2@hotmail.com       | QA TI | 654321 |
+        | teste-me-automacao3@hotmail.com | TesteME QA | 123456 |
+        | automacao-me3@hotmail.com       | QA TI | 654321 |
 
     Esquema do Cenário: Não deve acessar uma conta com email ou senha invalido
       Quando informo o email "<email>" no formulario entrar
@@ -25,8 +25,8 @@
 
       Exemplos:
         | email                           |
-        | teste-me-automacao2@hotmail.com |
-        | automacao-me2@hotmail.com       |
+        | teste-me-automacao3@hotmail.com |
+        | automacao-me3@hotmail.com       |
 
     Cenário: Não deve acessar uma conta sem preencher email
       Quando informo a senha de teste

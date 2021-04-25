@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         //Configuração para o terminal apresentar os testes (se passaram ou não) e inclusão de
         //geração de relatórios automáticos em HTML e JSON na pasta reports
-        plugin = {"pretty","html:target/reports/relatorioHTML.html","json:target/reports/relatorioJSON.json"},
+        plugin = {"pretty","html:relatorios/relatorioHTML.html","json:relatorios/relatorioJSON.json"},
         //Configuração para o terminal indicar classes não criadas com CAMELCASE
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         //Realiza as funcionalides/cenarios com a tag @cadastro ou @login
