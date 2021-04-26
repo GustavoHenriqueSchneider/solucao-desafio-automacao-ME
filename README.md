@@ -19,12 +19,12 @@ Utilizando BDD ou do melhor jeito que conseguir fazer.
 * Gerenciador de dependências
   * Maven
 * Utilização das dependências: Cucumber, JUnit e Selenium
-  * Cucumber: Framework utilizado para automatizar testes de aceitação criados através da metodologia BDD.
-  * JUnit: Realiza a execução do programa integrado ao Cucumber.
-  * Selenium: Framework para realizar testes funcionais na web integrado ao Cucumber.
+  * Cucumber JVM: Java » 6.10.3: Framework utilizado para automatizar testes de aceitação criados através da metodologia BDD.
+  * Cucumber JVM: JUnit » 6.10.3: Realiza a execução do programa integrado ao Cucumber.
+  * Selenium Java » 3.141.59: Framework para realizar testes funcionais na web em conjunto ao Cucumber.
 * Linguagem de Programação
   * Java
-* ChromeDriver
+* ChromeDriver 89.0.4389.23
   * Utilizado para iniciar o Google Chrome em modo de testes automatizados através do Selenium.
 
 ### Requisitos para execução
