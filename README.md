@@ -40,7 +40,7 @@ Utilizando BDD ou do melhor jeito que conseguir fazer.
 Realize um fork do repositório e abra o projeto no Intellij IDEA.
 
 #### Inicialização
-Execute a classe "RunnerTest" no package "steps" e os testes serão inicializados.
+Execute a classe "RunnerTest" no package "steps" e os testes funcionais na web serão inicializados.
 
 #### Manuseio de Dados
 Caso deseje alterar os dados fornecidos para os testes de cadastro e acesso de usuario, acesse as features: "cadastrar_usuario.feature" e "entrar_usuario.feature" no local "src/test/resources/features" e altere os dados das tabelas nos cenários "Deve cadastrar uma conta com sucesso" e "Deve acessar uma conta com sucesso", respectivamente.
