@@ -26,7 +26,6 @@ Utilizando BDD ou do melhor jeito que conseguir fazer.
   * Java
 * ChromeDriver
   * Utilizado para iniciar o Google Chrome em modo de testes automatizados através do Selenium.
-* Google Chrome
 
 ### Requisitos para execução
 * Java 
