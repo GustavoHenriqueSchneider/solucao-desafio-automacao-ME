@@ -37,7 +37,7 @@ Utilizando BDD ou do melhor jeito que conseguir fazer.
 
 ### Instruções
 #### Instalação
-Realize um fork do repositório ou baixar o projeto, abra o mesmo no Intellij IDEA.
+Realize um fork do repositório ou baixe o projeto para seu dispositivo, em seguida abra o mesmo no Intellij IDEA.
 
 #### Inicialização
 Execute a classe "RunnerTest" no package "steps" e os testes funcionais na web serão inicializados.
