@@ -106,6 +106,18 @@ public class AcessarUsuarioSteps {
         formularios.findElement(By.id("passwd")).sendKeys("testeME123");
     }
 
+    @Quando("informo o campo {word} do teste")
+    public void informoOOutroCampoDoTeste(String campoPreenchido) {
+        //Atribui o elemtento formulario de login através do id "center_column" a formularios
+        formularios = navegador.findElement(By.id("center_column"));
+            if("email".equals(campoPreenchido))
+                //Digita o email no campo de id "email" que esta dentro do formulario de id "center_column"
+                formularios.findElement(By.id("email")).sendKeys("teste-me-automacao@hotmail.com");
+            else if ("senha".equals(campoPreenchido))
+                //Digita a senha no campo de id "passwd" que esta dentro do formulario de id "center_column"
+                formularios.findElement(By.id("passwd")).sendKeys("testeME123");
+    }
+
     @After
     public void tearDown() {
         //Encerra o navegador (todas abas)

@@ -6,7 +6,6 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-
 import static steps.AcessarUsuarioSteps.formularios;
 import static steps.AcessarUsuarioSteps.navegador;
 
@@ -35,9 +34,9 @@ public class CadastrarUsuarioSteps {
         {
             //Valida se a mensagem de erro é igual a encontrada na tentativa de criar uma conta já existente
             Assert.assertEquals("An account using this email address has already been registered. Please enter a valid password or request a new one.",erro);
-
         }
-        else if("sem email".equals(tipoErro)){
+        else if("sem email".equals(tipoErro))
+        {
             //Valida se a mensagem de erro é igual a encontrada na tentativa de criar uma conta sem email
             Assert.assertEquals("Invalid email address.",erro);
         }
@@ -47,8 +46,10 @@ public class CadastrarUsuarioSteps {
     public void escolhoOGênero(String genero) {
         //Seleciona o genero
         if("M".equals(genero))
+            //Seleciona o genero masculino clicando no elemento de id "id_gender1"
             navegador.findElement(By.id("id_gender1")).click();
         else if("F".equals(genero))
+            //Seleciona o genero feminino clicando no elemento de id "id_gender2"
             navegador.findElement(By.id("id_gender2")).click();
     }
 
@@ -68,19 +69,19 @@ public class CadastrarUsuarioSteps {
 
     @Quando("^informo a data de nascimento (\\d{2})/(\\d{2})/(\\d{4})$")
     public void informoADataDeNascimento(int dia, int mes, String ano) {
-            //Se o dia começar com "0" (exemplo: dia "03"), irá remover o "0" deixando somente o "3" para pesquisa por valor
-            if("0".equals(String.valueOf(dia).substring(0,0)))
-                diaData = String.valueOf(dia).substring(1);
-            else
-                diaData = String.valueOf(dia);
+        //Se o dia começar com "0" (exemplo: dia "03"), irá remover o "0" deixando somente o "3" para pesquisa por valor
+        if("0".equals(String.valueOf(dia).substring(0,0)))
+            diaData = String.valueOf(dia).substring(1);
+        else
+            diaData = String.valueOf(dia);
         //No combobox de id "days" escolhe a opção de valor diaData (que será o dia "03" no caso de "3")
         WebElement dias = navegador.findElement(By.id("days"));
         new Select(dias).selectByValue(String.valueOf(diaData));
-            //Se o mes começar com "0" (exemplo: mes "03"), irá remover o "0" deixando somente o "3" para pesquisa por valor
-            if("0".equals(String.valueOf(mes).substring(0,0)))
-                mesData = String.valueOf(mes).substring(1);
-            else
-                mesData = String.valueOf(mes);
+        //Se o mes começar com "0" (exemplo: mes "03"), irá remover o "0" deixando somente o "3" para pesquisa por valor
+        if("0".equals(String.valueOf(mes).substring(0,0)))
+            mesData = String.valueOf(mes).substring(1);
+        else
+            mesData = String.valueOf(mes);
         //No combobox de id "months" escolhe a opção de valor mesData (que será o mês "March" no caso de "3")
         WebElement meses = navegador.findElement(By.id("months"));
         new Select(meses).selectByValue(mesData);
