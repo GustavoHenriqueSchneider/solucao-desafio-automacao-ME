@@ -10,12 +10,14 @@
       Quando informo o email "<email>" no formulario entrar
       E informo a senha "<senha>" no formulario entrar
       E clico em entrar
-      Então visualizo meu nome "<nome>" na pagina inicial
+      Então visualizo meu nome "<nomeCompleto>" na pagina inicial
 
+      #ALTERE AQUI
+      #Os dados devem ser equivalentes aos fornecidos no "cadastrar_usuario.feature"
       Exemplos:
-        | email                              | nome       | senha  |
-        | teste-me-automacao2021@hotmail.com | TesteME QA | 123456 |
-        | automacao-me2021@hotmail.com       | QA TI      | 654321 |
+        | email                              | nomeCompleto | senha  |
+        | teste-me-automacao100@hotmail.com | TesteME QA   | 123456 |
+        | automacao-me100@hotmail.com       | QA TI        | 654321 |
 
     Esquema do Cenário: Não deve acessar uma conta com senha incorreta
       Quando informo o email "<email>" no formulario entrar

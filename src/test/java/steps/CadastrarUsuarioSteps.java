@@ -53,7 +53,7 @@ public class CadastrarUsuarioSteps {
             navegador.findElement(By.id("id_gender2")).click();
     }
 
-    @Quando("^informo o nome \"([a-zA-Z]+)\" e sobrenome \"([a-zA-Z]+)\"$")
+    @Quando("informo o nome completo \"([a-zA-Z]+) ([a-zA-Z]+)\"$")
     public void informoONomeESobrenomeE(String nome, String sobrenome) {
         //Digita o nome no campo de id "customer_firstname"
         navegador.findElement(By.id("customer_firstname")).sendKeys(nome);
