@@ -16,8 +16,8 @@
       #Os dados devem ser equivalentes aos fornecidos no "cadastrar_usuario.feature"
       Exemplos:
         | email                              | nomeCompleto | senha  |
-        | teste-me-automacao100@hotmail.com | TesteME QA   | 123456 |
-        | automacao-me100@hotmail.com       | QA TI        | 654321 |
+        | teste-me-automacao101@hotmail.com | TesteME QA   | 123456 |
+        | automacao-me101@hotmail.com       | QA TI        | 654321 |
 
     Esquema do Cenário: Não deve acessar uma conta com senha incorreta
       Quando informo o email "<email>" no formulario entrar

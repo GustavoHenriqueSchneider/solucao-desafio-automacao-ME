@@ -25,8 +25,8 @@
       #Dados para cadastros de usuario
       Exemplos:
       | email | genero | nomeCompleto | senha | data | endereco | cidade | estado | cep | telefone |
-      | teste-me-automacao100@hotmail.com | M | TesteME QA | 123456 | 11/01/2000 | Rua Teste, 123 | Cidade ME | Hawaii | 00001 | +551199999999 |
-      | automacao-me100@hotmail.com | F | QA TI | 654321 | 03/03/1982 | Avenida Teste, 99 | ME City | California | 12300 | 1391234578 |
+      | teste-me-automacao103@hotmail.com | M | TesteME QA | 123456 | 11/01/2000 | Rua Teste, 123 | Cidade ME | Hawaii | 00001 | +551199999999 |
+      | automacao-me103@hotmail.com | F | QA TI | 654321 | 03/03/1982 | Avenida Teste, 99 | ME City | California | 12300 | 1391234578 |
 
     Esquema do Cenário: Não deve cadastrar uma conta já existente
       Quando informo o email "<email>" no formulario cadastrar

@@ -2,16 +2,18 @@ package steps;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.WebDriver;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
@@ -118,7 +120,23 @@ public class AcessarUsuarioSteps {
                 formularios.findElement(By.id("passwd")).sendKeys("testeME123");
     }
 
-    @After
+    @After(order=1)
+    public void screenshot(Scenario cenario){
+        //Cria uma variavel do tipo File e atribui o print da tela nela, pois casteia os metodos da classe
+        //TakesScreenshot para a variavel navegador
+        File file = ((TakesScreenshot)navegador).getScreenshotAs(OutputType.FILE);
+        String caminho = "relatorios/evidencias/"+cenario.getName()+"."+cenario.getLine()+".jpg";
+            //Copia o arquivo para o diretório, ou seja, salva a evidencia
+        try {
+            FileUtils.copyFile(file, new File(caminho));
+        } catch (IOException e) {
+            System.out.println("\nHouve um erro ao tirar o print da evidencia:"+e+"\n");
+            System.out.println("Diretório: "+caminho);
+        }
+
+    }
+
+    @After(order=0)
     public void tearDown() {
         //Encerra o navegador (todas abas)
         navegador.quit();
