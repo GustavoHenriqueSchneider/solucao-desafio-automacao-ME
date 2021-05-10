@@ -1,4 +1,4 @@
-package steps;
+package steps.pages;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.pt.Então;
@@ -7,10 +7,11 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
 import static steps.AcessarUsuarioSteps.formularios;
 import static steps.AcessarUsuarioSteps.navegador;
 
-public class CadastrarUsuarioSteps {
+public class CadastrarUsuarioStepsPAGES {
     private String diaData,mesData;
 
     @Before("@cadastro")

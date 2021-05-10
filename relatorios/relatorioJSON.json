@@ -11,948 +11,52 @@
         "steps": [
           {
             "result": {
-              "duration": 6876910700,
+              "duration": 1413752600,
               "status": "passed"
             },
             "line": 6,
-            "name": "que acesso o site Automation Practice",
+            "name": "que desejo acessar minha conta",
             "match": {
-              "location": "steps.AcessarUsuarioSteps.queAcessoOSiteAutomationPractice()"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.desejoAcessarMinhaConta()"
             },
             "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 1977214300,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "clico em \"Sign in\"",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmSignIn()"
-            },
-            "keyword": "E "
           }
         ]
       },
       {
-        "start_timestamp": "2021-05-04T02:28:33.285Z",
+        "start_timestamp": "2021-05-10T21:59:11.006Z",
         "before": [
           {
             "result": {
-              "duration": 2141069400,
+              "duration": 6362928500,
               "status": "passed"
             },
             "match": {
-              "location": "steps.AcessarUsuarioSteps.setup()"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.setup()"
             }
           }
         ],
-        "line": 28,
-        "name": "Deve cadastrar uma conta com sucesso",
+        "line": 8,
+        "name": "Deve acessar uma conta com sucesso",
         "description": "",
-        "id": "cadastrar-conta;deve-cadastrar-uma-conta-com-sucesso;;2",
+        "id": "acessar-conta;deve-acessar-uma-conta-com-sucesso",
         "after": [
           {
             "result": {
-              "duration": 214114100,
+              "duration": 178522000,
               "status": "passed"
             },
             "match": {
-              "location": "steps.AcessarUsuarioSteps.screenshot(io.cucumber.java.Scenario)"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.screenshot(io.cucumber.java.Scenario)"
             }
           },
           {
             "result": {
-              "duration": 815860800,
+              "duration": 1044038100,
               "status": "passed"
             },
             "match": {
-              "location": "steps.AcessarUsuarioSteps.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 124666100,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "informo o email \"teste-me-automacao103@hotmail.com\" no formulario cadastrar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "teste-me-automacao103@hotmail.com",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoOEmailNoFormularioCadastrar(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 64825900,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "clico em registrar",
-            "match": {
-              "location": "steps.CadastrarUsuarioSteps.clicoEmRegistrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 1599319000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "escolho o gênero \"M\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "M",
-                  "offset": 18
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.escolhoOGênero(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 131838700,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "informo o nome completo \"TesteME QA\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "TesteME",
-                  "offset": 25
-                },
-                {
-                  "val": "QA",
-                  "offset": 33
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoONomeESobrenomeE(java.lang.String,java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 66820900,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "informo a senha \"123456\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "123456",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoASenha(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 495673100,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "informo a data de nascimento 11/01/2000",
-            "match": {
-              "arguments": [
-                {
-                  "val": "11",
-                  "offset": 29
-                },
-                {
-                  "val": "01",
-                  "offset": 32
-                },
-                {
-                  "val": "2000",
-                  "offset": 35
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoADataDeNascimento(int,int,java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 75796800,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "informo o endereço \"Rua Teste, 123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Rua Teste, 123",
-                  "offset": 20
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoOEndereço(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 61834600,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "informo a cidade \"Cidade ME\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Cidade ME",
-                  "offset": 18
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoACidade(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 71808400,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "seleciono o estado \"Hawaii\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Hawaii",
-                  "offset": 20
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.selecionoOEstado(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 61834100,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "informo o CEP \"00001\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "00001",
-                  "offset": 15
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoOCEP(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 74310000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "informo o telefone \"+551199999999\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "+551199999999",
-                  "offset": 20
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoOTelefone(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 1713554400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "clico no botão registrar",
-            "match": {
-              "location": "steps.CadastrarUsuarioSteps.clicoNoBotãoRegistrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 28922100,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "visualizo meu nome \"TesteME QA\" na pagina inicial",
-            "match": {
-              "arguments": [
-                {
-                  "val": "TesteME QA",
-                  "offset": 20
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.visualizoMeuNomeNaPaginaInicial(java.lang.String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cadastro"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 6626818200,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "que acesso o site Automation Practice",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.queAcessoOSiteAutomationPractice()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 1662504100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "clico em \"Sign in\"",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmSignIn()"
-            },
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-04T02:28:49.960Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1780534500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.setup()"
-            }
-          }
-        ],
-        "line": 29,
-        "name": "Deve cadastrar uma conta com sucesso",
-        "description": "",
-        "id": "cadastrar-conta;deve-cadastrar-uma-conta-com-sucesso;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 332223500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.screenshot(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 652034500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 144612900,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "informo o email \"automacao-me103@hotmail.com\" no formulario cadastrar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "automacao-me103@hotmail.com",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoOEmailNoFormularioCadastrar(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 69812700,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "clico em registrar",
-            "match": {
-              "location": "steps.CadastrarUsuarioSteps.clicoEmRegistrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 2010105800,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "escolho o gênero \"F\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "F",
-                  "offset": 18
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.escolhoOGênero(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 139602500,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "informo o nome completo \"QA TI\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "QA",
-                  "offset": 25
-                },
-                {
-                  "val": "TI",
-                  "offset": 28
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoONomeESobrenomeE(java.lang.String,java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 66821300,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "informo a senha \"654321\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "654321",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoASenha(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 218415800,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "informo a data de nascimento 03/03/1982",
-            "match": {
-              "arguments": [
-                {
-                  "val": "03",
-                  "offset": 29
-                },
-                {
-                  "val": "03",
-                  "offset": 32
-                },
-                {
-                  "val": "1982",
-                  "offset": 35
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoADataDeNascimento(int,int,java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 69812400,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "informo o endereço \"Avenida Teste, 99\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Avenida Teste, 99",
-                  "offset": 20
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoOEndereço(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 102724600,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "informo a cidade \"ME City\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "ME City",
-                  "offset": 18
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoACidade(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 67818300,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "seleciono o estado \"California\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "California",
-                  "offset": 20
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.selecionoOEstado(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 65822800,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "informo o CEP \"12300\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "12300",
-                  "offset": 15
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoOCEP(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 66822100,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "informo o telefone \"1391234578\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1391234578",
-                  "offset": 20
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoOTelefone(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 1300191500,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "clico no botão registrar",
-            "match": {
-              "location": "steps.CadastrarUsuarioSteps.clicoNoBotãoRegistrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 32946000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "visualizo meu nome \"QA TI\" na pagina inicial",
-            "match": {
-              "arguments": [
-                {
-                  "val": "QA TI",
-                  "offset": 20
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.visualizoMeuNomeNaPaginaInicial(java.lang.String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cadastro"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 5900647100,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "que acesso o site Automation Practice",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.queAcessoOSiteAutomationPractice()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 1876476400,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "clico em \"Sign in\"",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmSignIn()"
-            },
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-04T02:29:05.387Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1985722000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.setup()"
-            }
-          }
-        ],
-        "line": 38,
-        "name": "Não deve cadastrar uma conta já existente",
-        "description": "",
-        "id": "cadastrar-conta;não-deve-cadastrar-uma-conta-já-existente;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 104690800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.screenshot(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 745432600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 132644900,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "informo o email \"teste-me-automacao@hotmail.com\" no formulario cadastrar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "teste-me-automacao@hotmail.com",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoOEmailNoFormularioCadastrar(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 60836800,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "clico em registrar",
-            "match": {
-              "location": "steps.CadastrarUsuarioSteps.clicoEmRegistrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 723470900,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "visualizo o erro de criação de conta ja existente",
-            "match": {
-              "arguments": [
-                {
-                  "val": "ja existente",
-                  "offset": 37
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.visualizoOErroDeCriaçãoDeConta(java.lang.String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cadastro"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 6143919600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "que acesso o site Automation Practice",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.queAcessoOSiteAutomationPractice()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 1833152500,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "clico em \"Sign in\"",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmSignIn()"
-            },
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-04T02:29:16.926Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1889247900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.setup()"
-            }
-          }
-        ],
-        "line": 39,
-        "name": "Não deve cadastrar uma conta já existente",
-        "description": "",
-        "id": "cadastrar-conta;não-deve-cadastrar-uma-conta-já-existente;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 93748700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.screenshot(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 1639580700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 129652900,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "informo o email \"automacao-me@hotmail.com\" no formulario cadastrar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "automacao-me@hotmail.com",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.informoOEmailNoFormularioCadastrar(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 72805600,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "clico em registrar",
-            "match": {
-              "location": "steps.CadastrarUsuarioSteps.clicoEmRegistrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 673197500,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "visualizo o erro de criação de conta ja existente",
-            "match": {
-              "arguments": [
-                {
-                  "val": "ja existente",
-                  "offset": 37
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.visualizoOErroDeCriaçãoDeConta(java.lang.String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cadastro"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 5101695700,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "que acesso o site Automation Practice",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.queAcessoOSiteAutomationPractice()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 1492915600,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "clico em \"Sign in\"",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmSignIn()"
-            },
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-04T02:29:29.410Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2134476500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.setup()"
-            }
-          }
-        ],
-        "line": 41,
-        "name": "Não deve iniciar cadastro sem informar email",
-        "description": "",
-        "id": "cadastrar-conta;não-deve-iniciar-cadastro-sem-informar-email",
-        "after": [
-          {
-            "result": {
-              "duration": 96830000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.screenshot(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 677341600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.tearDown()"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.tearDown()"
             }
           }
         ],
@@ -961,870 +65,126 @@
         "steps": [
           {
             "result": {
-              "duration": 57846000,
+              "duration": 2616097400,
               "status": "passed"
             },
-            "line": 42,
-            "name": "clico em registrar",
+            "line": 9,
+            "name": "forneço dados de conta corretos",
             "match": {
-              "location": "steps.CadastrarUsuarioSteps.clicoEmRegistrar()"
+              "arguments": [
+                {
+                  "val": "corretos",
+                  "offset": 23
+                }
+              ],
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.fornecoDadosDeAcessoCorretos(java.lang.String)"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 558682900,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "visualizo o erro de criação de conta sem email",
-            "match": {
-              "arguments": [
-                {
-                  "val": "sem email",
-                  "offset": 37
-                }
-              ],
-              "location": "steps.CadastrarUsuarioSteps.visualizoOErroDeCriaçãoDeConta(java.lang.String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cadastro"
-          }
-        ]
-      }
-    ],
-    "name": "Cadastrar Conta",
-    "description": "",
-    "id": "cadastrar-conta",
-    "keyword": "Funcionalidade",
-    "uri": "file:src/test/resources/features/cadastrar_usuario.feature",
-    "tags": [
-      {
-        "name": "@cadastro",
-        "type": "Tag",
-        "location": {
-          "line": 3,
-          "column": 3
-        }
-      }
-    ]
-  },
-  {
-    "line": 4,
-    "elements": [
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 6451597500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "que acesso o site Automation Practice",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.queAcessoOSiteAutomationPractice()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 1729447100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "clico em \"Sign in\"",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmSignIn()"
-            },
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-04T02:29:39.541Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1729742500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.setup()"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "Deve acessar uma conta com sucesso",
-        "description": "",
-        "id": "acessar-conta;deve-acessar-uma-conta-com-sucesso;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 127165500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.screenshot(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 684620900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 119680400,
+              "duration": 38896000,
               "status": "passed"
             },
             "line": 10,
-            "name": "informo o email \"teste-me-automacao101@hotmail.com\" no formulario entrar",
+            "name": "acesso a pagina inicial",
             "match": {
-              "arguments": [
-                {
-                  "val": "teste-me-automacao101@hotmail.com",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.informoOEmailNoFormularioEntrar(java.lang.String)"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.acessoAPaginaInicial()"
             },
-            "keyword": "Quando "
-          },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginPage"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
           {
             "result": {
-              "duration": 69812600,
+              "duration": 1535396600,
               "status": "passed"
             },
-            "line": 11,
-            "name": "informo a senha \"123456\" no formulario entrar",
+            "line": 6,
+            "name": "que desejo acessar minha conta",
             "match": {
-              "arguments": [
-                {
-                  "val": "123456",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.informoASenhaNoFormularioEntrar(java.lang.String)"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.desejoAcessarMinhaConta()"
             },
-            "keyword": "E "
-          },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-10T21:59:22.725Z",
+        "before": [
           {
             "result": {
-              "duration": 1554925500,
+              "duration": 5867233800,
               "status": "passed"
             },
-            "line": 12,
-            "name": "clico em entrar",
             "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmEntrar()"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Não deve acessar uma conta sem preencher todos campos",
+        "description": "",
+        "id": "acessar-conta;não-deve-acessar-uma-conta-sem-preencher-todos-campos;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 110704400,
+              "status": "passed"
             },
-            "keyword": "E "
+            "match": {
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.screenshot(io.cucumber.java.Scenario)"
+            }
           },
           {
             "result": {
-              "duration": 24455600,
+              "duration": 687782600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1160493500,
               "status": "passed"
             },
             "line": 13,
-            "name": "visualizo meu nome \"TesteME QA\" na pagina inicial",
-            "match": {
-              "arguments": [
-                {
-                  "val": "TesteME QA",
-                  "offset": 20
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.visualizoMeuNomeNaPaginaInicial(java.lang.String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 4664512900,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "que acesso o site Automation Practice",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.queAcessoOSiteAutomationPractice()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 1974849400,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "clico em \"Sign in\"",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmSignIn()"
-            },
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-04T02:29:52.046Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1902851800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.setup()"
-            }
-          }
-        ],
-        "line": 20,
-        "name": "Deve acessar uma conta com sucesso",
-        "description": "",
-        "id": "acessar-conta;deve-acessar-uma-conta-com-sucesso;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 240862100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.screenshot(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 818320800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 119679800,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "informo o email \"automacao-me101@hotmail.com\" no formulario entrar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "automacao-me101@hotmail.com",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.informoOEmailNoFormularioEntrar(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 72805400,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "informo a senha \"654321\" no formulario entrar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "654321",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.informoASenhaNoFormularioEntrar(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 1875552900,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "clico em entrar",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmEntrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 25930300,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "visualizo meu nome \"QA TI\" na pagina inicial",
-            "match": {
-              "arguments": [
-                {
-                  "val": "QA TI",
-                  "offset": 20
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.visualizoMeuNomeNaPaginaInicial(java.lang.String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 6711108900,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "que acesso o site Automation Practice",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.queAcessoOSiteAutomationPractice()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 1993928000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "clico em \"Sign in\"",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmSignIn()"
-            },
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-04T02:30:03.770Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2066948800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.setup()"
-            }
-          }
-        ],
-        "line": 30,
-        "name": "Não deve acessar uma conta com senha incorreta",
-        "description": "",
-        "id": "acessar-conta;não-deve-acessar-uma-conta-com-senha-incorreta;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 121673200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.screenshot(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 698917100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 130651300,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "informo o email \"teste-me-automacao2@hotmail.com\" no formulario entrar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "teste-me-automacao2@hotmail.com",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.informoOEmailNoFormularioEntrar(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 123668400,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "informo a senha \"testeSenhaErrada123\" no formulario entrar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testeSenhaErrada123",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.informoASenhaNoFormularioEntrar(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 1468980800,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "clico em entrar",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmEntrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 24933200,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "visualizo o erro de autenticação",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.visualizoOErroDeAutenticação()"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 5443505600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "que acesso o site Automation Practice",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.queAcessoOSiteAutomationPractice()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 3050315300,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "clico em \"Sign in\"",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmSignIn()"
-            },
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-04T02:30:17.118Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1818323500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.setup()"
-            }
-          }
-        ],
-        "line": 31,
-        "name": "Não deve acessar uma conta com senha incorreta",
-        "description": "",
-        "id": "acessar-conta;não-deve-acessar-uma-conta-com-senha-incorreta;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 113695300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.screenshot(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 645274200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 121674800,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "informo o email \"teste-me-automacao3@hotmail.com\" no formulario entrar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "teste-me-automacao3@hotmail.com",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.informoOEmailNoFormularioEntrar(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 93748500,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "informo a senha \"testeSenhaErrada123\" no formulario entrar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testeSenhaErrada123",
-                  "offset": 17
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.informoASenhaNoFormularioEntrar(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 808646500,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "clico em entrar",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmEntrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 23936800,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "visualizo o erro de autenticação",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.visualizoOErroDeAutenticação()"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 6355559700,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "que acesso o site Automation Practice",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.queAcessoOSiteAutomationPractice()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 1347406000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "clico em \"Sign in\"",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmSignIn()"
-            },
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-04T02:30:29.242Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1633377300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.setup()"
-            }
-          }
-        ],
-        "line": 40,
-        "name": "Não deve acessar uma conta sem preencher email",
-        "description": "",
-        "id": "acessar-conta;não-deve-acessar-uma-conta-sem-preencher-\u003ccampoobrigatorio\u003e;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 113740800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.screenshot(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 687291400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 128167300,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "informo o campo senha do teste",
-            "match": {
-              "arguments": [
-                {
-                  "val": "senha",
-                  "offset": 16
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.informoOOutroCampoDoTeste(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 853226600,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "clico em entrar",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmEntrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 24935100,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "visualizo o erro de obrigatoriedade de email",
+            "name": "informo somente o campo email",
             "match": {
               "arguments": [
                 {
                   "val": "email",
-                  "offset": 39
+                  "offset": 24
                 }
               ],
-              "location": "steps.AcessarUsuarioSteps.visualizoOErroDeObrigatoriedadeDeCampo(java.lang.String)"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 5968493500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "que acesso o site Automation Practice",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.queAcessoOSiteAutomationPractice()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 1401043900,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "clico em \"Sign in\"",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmSignIn()"
-            },
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-04T02:30:40.392Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1777842800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.setup()"
-            }
-          }
-        ],
-        "line": 41,
-        "name": "Não deve acessar uma conta sem preencher senha",
-        "description": "",
-        "id": "acessar-conta;não-deve-acessar-uma-conta-sem-preencher-\u003ccampoobrigatorio\u003e;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 111701200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.screenshot(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 683746000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 112698900,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "informo o campo email do teste",
-            "match": {
-              "arguments": [
-                {
-                  "val": "email",
-                  "offset": 16
-                }
-              ],
-              "location": "steps.AcessarUsuarioSteps.informoOOutroCampoDoTeste(java.lang.String)"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.informoOOutroCampoDoTeste(java.lang.String)"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 881442600,
+              "duration": 24931700,
               "status": "passed"
             },
-            "line": 35,
-            "name": "clico em entrar",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmEntrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 24931600,
-              "status": "passed"
-            },
-            "line": 36,
+            "line": 14,
             "name": "visualizo o erro de obrigatoriedade de senha",
             "match": {
               "arguments": [
@@ -1833,14 +193,14 @@
                   "offset": 39
                 }
               ],
-              "location": "steps.AcessarUsuarioSteps.visualizoOErroDeObrigatoriedadeDeCampo(java.lang.String)"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.visualizoOErroDeObrigatoriedadeDeCampo(java.lang.String)"
             },
             "keyword": "Então "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@loginPage"
           }
         ]
       },
@@ -1853,134 +213,294 @@
         "steps": [
           {
             "result": {
-              "duration": 5072760300,
+              "duration": 1578777100,
               "status": "passed"
             },
             "line": 6,
-            "name": "que acesso o site Automation Practice",
+            "name": "que desejo acessar minha conta",
             "match": {
-              "location": "steps.AcessarUsuarioSteps.queAcessoOSiteAutomationPractice()"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.desejoAcessarMinhaConta()"
             },
             "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 2284948500,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "clico em \"Sign in\"",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmSignIn()"
-            },
-            "keyword": "E "
           }
         ]
       },
       {
-        "start_timestamp": "2021-05-04T02:30:51.360Z",
+        "start_timestamp": "2021-05-10T21:59:32.118Z",
         "before": [
           {
             "result": {
-              "duration": 1451530700,
+              "duration": 5550456200,
               "status": "passed"
             },
             "match": {
-              "location": "steps.AcessarUsuarioSteps.setup()"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.setup()"
             }
           }
         ],
-        "line": 43,
-        "name": "Não deve acessar uma conta inexistente",
+        "line": 19,
+        "name": "Não deve acessar uma conta sem preencher todos campos",
         "description": "",
-        "id": "acessar-conta;não-deve-acessar-uma-conta-inexistente",
+        "id": "acessar-conta;não-deve-acessar-uma-conta-sem-preencher-todos-campos;;3",
         "after": [
           {
             "result": {
-              "duration": 116936700,
+              "duration": 126660100,
               "status": "passed"
             },
             "match": {
-              "location": "steps.AcessarUsuarioSteps.screenshot(io.cucumber.java.Scenario)"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.screenshot(io.cucumber.java.Scenario)"
             }
           },
           {
             "result": {
-              "duration": 733472900,
+              "duration": 772177300,
               "status": "passed"
             },
             "match": {
-              "location": "steps.AcessarUsuarioSteps.tearDown()"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.tearDown()"
             }
           }
         ],
         "type": "scenario",
-        "keyword": "Cenario",
+        "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 107220800,
+              "duration": 1162447100,
               "status": "passed"
             },
-            "line": 44,
-            "name": "informo o email \"teste-email-inexistente@teste.com.br\" no formulario entrar",
+            "line": 13,
+            "name": "informo somente o campo senha",
             "match": {
               "arguments": [
                 {
-                  "val": "teste-email-inexistente@teste.com.br",
-                  "offset": 17
+                  "val": "senha",
+                  "offset": 24
                 }
               ],
-              "location": "steps.AcessarUsuarioSteps.informoOEmailNoFormularioEntrar(java.lang.String)"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.informoOOutroCampoDoTeste(java.lang.String)"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 71317100,
+              "duration": 24933200,
               "status": "passed"
             },
-            "line": 45,
-            "name": "informo a senha \"123456\" no formulario entrar",
+            "line": 14,
+            "name": "visualizo o erro de obrigatoriedade de email",
             "match": {
               "arguments": [
                 {
-                  "val": "123456",
-                  "offset": 17
+                  "val": "email",
+                  "offset": 39
                 }
               ],
-              "location": "steps.AcessarUsuarioSteps.informoASenhaNoFormularioEntrar(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 1302332900,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "clico em entrar",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.clicoEmEntrar()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 26951900,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "visualizo o erro de autenticação",
-            "match": {
-              "location": "steps.AcessarUsuarioSteps.visualizoOErroDeAutenticação()"
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.visualizoOErroDeObrigatoriedadeDeCampo(java.lang.String)"
             },
             "keyword": "Então "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@loginPage"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 1507470500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que desejo acessar minha conta",
+            "match": {
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.desejoAcessarMinhaConta()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-10T21:59:41.341Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6482433300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.setup()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Não deve acessar contas invalidas",
+        "description": "",
+        "id": "acessar-conta;não-deve-acessar-contas-invalidas;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 128642000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.screenshot(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 665181400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1013267600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "forneço dados de conta incorretos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "incorretos",
+                  "offset": 23
+                }
+              ],
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.fornecoDadosDeAcessoCorretos(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 23935900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "visualizo o erro de autenticação",
+            "match": {
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.visualizoOErroDeAutenticação()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginPage"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 1872159600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que desejo acessar minha conta",
+            "match": {
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.desejoAcessarMinhaConta()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-10T21:59:51.168Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6793716600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.setup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Não deve acessar contas invalidas",
+        "description": "",
+        "id": "acessar-conta;não-deve-acessar-contas-invalidas;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 145610100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.screenshot(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1229386900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1085985800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "forneço dados de conta inexistentes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "inexistentes",
+                  "offset": 23
+                }
+              ],
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.fornecoDadosDeAcessoCorretos(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 22938300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "visualizo o erro de autenticação",
+            "match": {
+              "location": "steps.pages.AcessarUsuarioStepsPAGES.visualizoOErroDeAutenticação()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginPage"
           }
         ]
       }
@@ -1989,10 +509,10 @@
     "description": "",
     "id": "acessar-conta",
     "keyword": "Funcionalidade",
-    "uri": "file:src/test/resources/features/entrar_usuario.feature",
+    "uri": "file:src/test/resources/features/entrar_usuario_page.feature",
     "tags": [
       {
-        "name": "@login",
+        "name": "@loginPage",
         "type": "Tag",
         "location": {
           "line": 3,
