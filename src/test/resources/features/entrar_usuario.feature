@@ -1,6 +1,6 @@
 #Define a linguagem utilizada pelo Cucumber como português
 #language: pt
-  @loginPage
+  @login
   Funcionalidade: Acessar Conta
     Contexto:
       Dado que desejo acessar minha conta

@@ -1,4 +1,4 @@
-package steps.pages;
+package steps;
 
 import configs.Web;
 import io.cucumber.java.After;
@@ -8,15 +8,16 @@ import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
 import org.apache.commons.io.FileUtils;
+import org.junit.Assert;
 import org.openqa.selenium.*;
-import pages.LoginSucessPage;
+import pages.BasePage;
 import pages.LoginFormPage;
 import pages.HomePage;
 import java.io.File;
 import java.io.IOException;
 
-public class AcessarUsuarioStepsPAGES {
-    private WebDriver navegador;
+public class AcessarUsuarioSteps {
+    protected static WebDriver navegador;
 
     @Before
     public void setup() {
@@ -26,15 +27,16 @@ public class AcessarUsuarioStepsPAGES {
 
     @Dado("que desejo acessar minha conta")
     public void desejoAcessarMinhaConta(){
-        new HomePage(navegador)
-                .clicarSignIn();
+        //Abre o navegador e clica em Sign In
+        new HomePage(navegador).clicarSignIn();
     }
 
     @Quando("^forneço dados de conta (corretos|incorretos|inexistentes)$")
     public void fornecoDadosDeAcessoCorretos(String tipoDadosConta){
+        //Confere o tipo de dados fornecidos e realiza a operação de acordo
         if("corretos".equals(tipoDadosConta)){
             new LoginFormPage(navegador)
-                    .fazerLogin("teste-me-automacao101@hotmail.com","123456");
+                    .fazerLogin("testeguguinha3@teste.com","123456");
         }
         if("incorretos".equals(tipoDadosConta)){
             new LoginFormPage(navegador)
@@ -48,21 +50,37 @@ public class AcessarUsuarioStepsPAGES {
 
     @Então("acesso a pagina inicial")
     public void acessoAPaginaInicial() {
-        new LoginSucessPage(navegador).conferirNome("TesteME QA");
+        //Valida o nome apresentado na pagina com o nome completo do usuario
+        String nomeMensagem = new BasePage(navegador).conferirNome();
+        Assert.assertEquals("Gustavo Schneider", nomeMensagem);
     }
 
     @Então("^visualizo o erro de autenticação$")
     public void visualizoOErroDeAutenticação() {
-        new LoginFormPage(navegador).contaInvalida();
+        //Valida se a mensagem de erro é igual a encontrada na tentativa de entrar com uma conta invalida
+        String erro = new BasePage(navegador).mensagemErroLogin();
+        Assert.assertEquals("There is 1 error\nAuthentication failed.", erro);
     }
 
     @Então("visualizo o erro de obrigatoriedade de {word}")
     public void visualizoOErroDeObrigatoriedadeDeCampo(String tipoErro) {
-        new LoginFormPage(navegador).faltaDeCampo(tipoErro);
+        //Valida mensagens de erro de acordo com o erro de campo obrigatório não preenchido
+        String erro = new BasePage(navegador).mensagemErroLogin();
+        if("email".equals(tipoErro))
+        {
+            //Valida se a mensagem de erro é igual a encontrada na tentativa de entrar sem email
+            Assert.assertEquals("There is 1 error\nAn email address required.", erro);
+        }
+        else if("senha".equals(tipoErro))
+        {
+            //Valida se a mensagem de erro é igual a encontrada na tentativa de entrar sem senha
+            Assert.assertEquals("There is 1 error\nPassword is required.", erro);
+        }
     }
 
     @Quando("informo somente o campo {word}")
     public void informoOOutroCampoDoTeste(String campoPreenchido) {
+        //Informa somente o campo determinado de acordo com o desejado
         if("email".equals(campoPreenchido))
             new LoginFormPage(navegador).fazerLoginIncorreto("teste-me-automacao101@hotmail.com","");
         if("senha".equals(campoPreenchido))
