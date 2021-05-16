@@ -13,8 +13,8 @@
     Esquema do Cenário: Não deve cadastrar uma conta de forma invalida
       Quando inicio um cadastro <tipoCadastro>
       Então visualizo o erro de criação de conta <tipoCadastro>
-#
+
       Exemplos:
       | tipoCadastro |
-      | já existente |
+      | ja existente |
       | sem email    |

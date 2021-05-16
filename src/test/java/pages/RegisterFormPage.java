@@ -78,7 +78,7 @@ public class RegisterFormPage extends BasePage{
         return this;
     }
 
-    public RegisterFormPage informarCEP(long cep){
+    public RegisterFormPage informarCEP(String cep){
         //Digita um CEP americano no campo de id "postcode"
         navegador.findElement(By.id("postcode")).sendKeys(String.valueOf(cep));
         return this;
@@ -98,7 +98,7 @@ public class RegisterFormPage extends BasePage{
 
     public SucessPage registrarUsuario(String genero, String nome, String sobrenome, String senha,
                                        int dia, int mes, String ano, String endereco, String cidade,
-                                       String estado, long cep, String telefone){
+                                       String estado, String cep, String telefone){
         escolherGenero(genero);
         informarNomeCompleto(nome,sobrenome);
         informarSenha(senha);

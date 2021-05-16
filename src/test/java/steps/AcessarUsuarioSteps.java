@@ -1,5 +1,6 @@
 package steps;
 
+import configs.ExcelReader;
 import configs.Web;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -15,13 +16,22 @@ import pages.LoginFormPage;
 import pages.HomePage;
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 
 public class AcessarUsuarioSteps {
     protected static WebDriver navegador;
+    private List<Map<String, String>> tabela = null;
 
-    @Before
-    public void setup() {
-        //Instancia o navegador
+//    @Before(order = 0)
+//    public void setupNuvem() {
+//        //Instancia o navegador na nuvem
+//        navegador = Web.createBrowserStack();
+//    }
+
+    @Before(order=0)
+    public void setupLocal() {
+        //Instancia o navegador localmente
         navegador = Web.createChrome();
     }
 
@@ -32,11 +42,18 @@ public class AcessarUsuarioSteps {
     }
 
     @Quando("^forneço dados de conta (corretos|incorretos|inexistentes)$")
-    public void fornecoDadosDeAcessoCorretos(String tipoDadosConta){
+    public void fornecoDadosDeAcesso(String tipoDadosConta){
         //Confere o tipo de dados fornecidos e realiza a operação de acordo
-        if("corretos".equals(tipoDadosConta)){
+        if("corretos".equals(tipoDadosConta)) {
+            ExcelReader reader = new ExcelReader();
+            try {
+                tabela = reader.getData("dados.xlsx", "dadosUsuario");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
             new LoginFormPage(navegador)
-                    .fazerLogin("testeguguinha3@teste.com","123456");
+                    .fazerLogin(tabela.get(0).get("Email"), tabela.get(0).get("Senha"));
         }
         if("incorretos".equals(tipoDadosConta)){
             new LoginFormPage(navegador)
@@ -52,7 +69,14 @@ public class AcessarUsuarioSteps {
     public void acessoAPaginaInicial() {
         //Valida o nome apresentado na pagina com o nome completo do usuario
         String nomeMensagem = new BasePage(navegador).conferirNome();
-        Assert.assertEquals("Gustavo Schneider", nomeMensagem);
+
+        ExcelReader reader = new ExcelReader();
+        try {
+            tabela = reader.getData("dados.xlsx", "dadosUsuario");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Assert.assertEquals(tabela.get(0).get("Nome")+" "+tabela.get(0).get("Sobrenome"), nomeMensagem);
     }
 
     @Então("^visualizo o erro de autenticação$")
