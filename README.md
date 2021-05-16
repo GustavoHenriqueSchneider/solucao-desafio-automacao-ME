@@ -34,6 +34,7 @@ Utilizando BDD ou do melhor jeito que conseguir fazer.
   * IntelliJ IDEA Community Edition 2021.1
 * Google Chrome
   * Versão Minima: 89.0.4389.23
+* Windows 10
 
 ### Instruções
 #### Instalação
@@ -43,7 +44,8 @@ Realize um fork do repositório ou baixe o projeto para seu dispositivo, em segu
 Execute a classe "RunnerTest" no package "steps" e os testes funcionais na web serão inicializados.
 
 #### Manuseio de Dados
-Caso deseje alterar os dados fornecidos para os testes de cadastro e acesso de usuario, acesse as features: "cadastrar_usuario.feature" e "entrar_usuario.feature" no local "src/test/resources/features" e altere os dados das tabelas nos cenários "Deve cadastrar uma conta com sucesso" e "Deve acessar uma conta com sucesso", respectivamente.
+Caso deseje alterar os dados fornecidos para os testes de cadastro e acesso de usuario, acesse e altere a segunda linha do arquivo "dados.xlsx" na raiz do projeto.
 
-#### Relatórios
-É possivel verificar os relatórios gerados em HTML e JSON dos testes realizados na pasta "relatorios".
+#### Relatórios e Evidências
+* Verificar os relatórios gerados em HTML e JSON dos testes realizados: acessar a pasta "relatorios" e em seguida o arquivo correspondente ao tipo de relatório desejado (".html" ou ".JSON").
+* Verificar as evidencias (screenshots) dos testes realizados: acessar a pasta "relatorios" e em seguida a pasta "evidencias".
